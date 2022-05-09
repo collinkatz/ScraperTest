@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+        function checkUser() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            var correctUser = "username";
+            var correctPassword = "password";
+            if (username == correctUser && password == correctPassword) {
+                document.getElementById("correct").textContent = "True";
+            }
+        }
+    </script>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username"><br><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password"><br><br>
+    <button type="button" id="submit" onClick="checkUser()">Submit</button>
+    <label id="correct">False</label>
+  </body>
+</html>

@@ -16,5 +16,5 @@ calendar_query_script = open("hocoCalendarQuery.js", "r")
 calendar_query = calendar_query_script.read()
 # print(divMain("#calendar").text()) #.fullCalendar(calendar_query)
 
-calendar_page = session.get(calendar_address)
-calendar_page.html.render(sleep=1, keep_page=True, scrolldown=1, script=calendar_query)
+# calendar_page = session.get(calendar_address)
+# calendar_page.html.render(sleep=1, keep_page=True, scrolldown=1, script=calendar_query)
